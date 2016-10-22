@@ -5,7 +5,10 @@ html,body{
   margin:0;
   padding:0;
   }
-
+  /*@media (max-width: 650px) {
+    .facet_sidebar {
+      display: none;
+    }*/
 .container-left {
     height:100vh;
     width:50%;
@@ -179,66 +182,39 @@ html,body{
 
 
 .container-right {
-  width:45%;
-  display:inline-block;
+  width:600px;;
   float: right;
 
 }
 
 .about-me {
   display: inline-block;
-  height: 100vh;
   width: 75%;
   padding-top: 50px;
-
 }
 
 .main-tag {
   color:#1460FB;
-  float: left;
+  float:left;
   font-family: helvetica;
   font-size: 12px;
   font-weight: bold;
   letter-spacing:1.5px;
-  margin: 0;
-  border: 2px dotted black;
-
-}
-
-.para{
-  float: right;
-  display: inline-block;
-  width: 75%;
-  max-width: 500px;
-  font-size: 18px;
-  font-weight: 200;
-  font-family: helvetica;
-  letter-spacing: .5px;
-  line-height: 140%;
-  margin: 0;
-
 }
 
 ul{
-  display:inline-block;
-  margin-left: 0;
-
+  margin: 20px 0 20px 60px;
+  line-height: 220%;
 }
 
 .bullets {
-  font-weight: bolder;
-  display: inline-block;
-  padding-left: 70px;
-
-
-
+  float: left;
 }
 
 .bullets li{
-  padding-bottom: 20px;
-  font-family: helvetica;
+  font-weight: bolder;
   list-style: none;
-
+  font-family: helvetica;
 }
 
 .bullets li::before{
@@ -249,17 +225,16 @@ ul{
 
 .all-projects{
   width: 75%;
-  border: 2px solid black;
   max-width: 500px;
   float: left;
   display: block;
+  margin: 0 0 0 20px;
 }
 
 
 .project-main{
   display: inline-block;
   float:left;
-  border: 2px dotted red;
 }
 
 h2{
@@ -269,37 +244,56 @@ h2{
 }
 
 .project-title {
+  width:75%;
+}
+
+.project-title a::after {
+  content: "\2192";
+  width:75%;
+  padding-left: 20px;
+}
+
+.project-title a {
   text-decoration: none;
   color: black;
   font-weight: bold;
   font-family: helvetica;
   font-size: 20px;
-  border: 2px dotted red;
-  float: left;
+}
+
+.project-title a:hover {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  font-family: helvetica;
+  font-size: 20px;
 }
 
 .project-description {
+    width: 75%;
+    max-width: 500px;
+    float: left;
+    display: block;
+    font-family: helvetica;
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+
+  .project-description1 {
+      width: 75%;
+      max-width: 500px;
+      float: left;
+      display: inline-block;
+      font-family: helvetica;
+      line-height: 150%;
+      margin: 0 0 20px 20px;
+    }
+
+  .list{
   display: inline-block;
-  width: 100%;
-  font-size: 15px;
-  font-weight: 200;
-  font-family: helvetica;
-  letter-spacing: .5px;
-  line-height: 140%;
   float:left;
-  border: 2px dotted green;
-}
-
-.clients{
-  float:right;
-  padding-top: 20px;
-}
-
-.list{
-  display: inline-block;
-  float:right;
   width:75%;
-  border:2px solid black;
+  margin: 0 0 20px 5px;
 
 }
 
@@ -307,16 +301,15 @@ h2{
   font-weight: bold;
   font-size: 18px;
   font-family: helvetica;
-  padding-left: 10px;
   display: inline-block;
 }
 
 .description{
-  border: 2px dotted red;
   font-size: 18px;
   font-family: helvetica;
   display:block;
-  padding-left: 10px;
+  margin-bottom: 5%;
+
 }
 
 .year{
@@ -324,6 +317,15 @@ h2{
   font-size: 18px;
   font-family: helvetica;
   float: right;
-  border: 2px solid red;
 
+}
+
+.view {
+  width: 75%;
+  max-width: 500px;
+  float: left;
+  display: block;
+  font-family: helvetica;
+  line-height: 150%;
+  margin: 0 0 0 95px;
 }
